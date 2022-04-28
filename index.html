@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App JS</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/solid.min.css" integrity="sha512-qzgHTQ60z8RJitD5a28/c47in6WlHGuyRvMusdnuWWBB6fZ0DWG/KyfchGSBlLVeqAz+1LzNq+gGZkCSHnSd3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="main" id="main">
+        <div class="navbar">
+            <div class="tasklist">
+                <h1>Tasks <span>Lists</span></h1>
+            </div>
+            <div class="addlist">
+                <button id="addListBtn" ><i class="fa-solid fa-circle-plus icon"> </i><span id="addlist"> Add List</span>
+                </button>
+            </div>
+        </div>
+        <div class="message" id="msg">
+            No items in the todo list
+        </div>
+
+        <div id="parent"></div>
+    </section>
+
+    <section class="showCard" id="showCard">
+        <div class="cardName">
+            <i class="fa-solid fa-circle-arrow-left icon" id="backToMain">
+                <span class="back-text">
+                    Back
+                </span>
+            </i>
+            
+            <h2 id="cardHeading"></h2>
+            <div style="color:black; visibility: hidden; width: 100px;"></div>
+        </div>
+        
+    </section>
+
+    <div id="popupMain" class="popupMain"></div>
+    <script src="index.js"></script>
+</body>
+</html>
